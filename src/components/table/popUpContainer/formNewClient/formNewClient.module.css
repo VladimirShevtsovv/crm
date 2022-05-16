@@ -1,0 +1,214 @@
+.newClient__form {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 25px 0;
+    align-items: center;
+    position: absolute;
+    transform: translateY(-300px);
+    animation: showPopUp 1s forwards;
+}
+
+@keyframes showPopUp {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+}
+
+
+.newClient__formInput {
+    width: 390px;
+    margin: 0 30px 25px 30px;
+    border: none;
+    border-bottom: 1px solid #C8C5D1;
+    padding-bottom: 4px;
+
+
+}
+
+.newClient__inputErrorMessange {
+    position: absolute;
+    font-size: 10px;
+    line-height: 14px;
+    color: #F06A4D;
+    top: -13px;
+    margin-left: 30px;
+}
+
+.newClient__form input:focus {
+    outline: none;
+}
+
+.newClient__formTopContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    width: calc(100% - 60px);
+    margin-bottom: 25px;
+    align-items: center;
+    position: relative;
+}
+
+.newClient__formTopContainerHeading {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+}
+
+.newClient__formTopContainerButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+.newClient__formTopContainerID {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #B0B0B0;
+}
+
+.newClient__newContactButtonContainer {
+    width: 100%;
+    background: #F4F3F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.newClient__newContactButton {
+    width: 100%;
+    background: #F4F3F6;
+    border: none;
+    padding: 8px 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.15s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newClient__newContactButton svg{
+    position: relative;
+    margin-right: 5px;
+}
+
+.newClient__newContactButton:hover {
+    background: #E7E5EB;
+    color: #9873FF;
+}
+
+.newClient__saveButton {
+    padding: 12.5px 35px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    background: #9873FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    position: relative;
+    transition: 0.15s linear;
+}
+
+.newClient__saveButton:hover {
+    opacity: 0.8;
+}
+
+.newClient__saveButton:active {
+    opacity: 1;
+    background: #8052FF;
+    border-right: #8052FF;
+}
+
+.newClient__cancelButton {
+    background: transparent;
+    border: none;
+    text-decoration: underline;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #333333;
+    cursor: pointer;
+}
+
+.spinner {
+     animation: rotate 2s linear infinite;
+     z-index: 15;
+     position: absolute;
+     top: calc(50% - 8px);
+     left: 10%;
+     width: 15px;
+     height: 15px;
+
+
+ }
+
+.spinner .path {
+    stroke-linecap: round;
+    animation: dash 1.5s ease-in-out infinite;
+    stroke: #B0B0B0;
+}
+
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dasharray: 1, 150;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -35;
+    }
+    100% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -124;
+    }
+}
+
+
+@media (max-width: 520px) {
+    .newClient__formInput{
+        width: 270px;
+        margin: 0 15px 25px 15px;
+    }
+    .newClient__formTopContainer {
+        width: calc(100% - 30px);
+        padding: 0 15px;
+    }
+
+
+}

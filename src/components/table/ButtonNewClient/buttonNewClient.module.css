@@ -1,0 +1,56 @@
+
+.button__newClient {
+    background: transparent;
+    width: 216px;
+    height: 44px;
+    border: 1px solid #9873FF;
+    color: #9873FF;
+    padding: 12px 30px;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto 0;
+    cursor: pointer;
+    transition: 0.1s linear;
+}
+
+.button__newClient:hover {
+    background: #B89EFF;
+    color: white;
+}
+
+.button__newClient svg path {
+    transition: 0.1s linear;
+}
+
+.button__newClient:hover svg path {
+    fill: white;
+}
+
+
+.button__newClient:active {
+    background: #9873FF;
+    color: white;
+}
+
+.button__newClient:active svg path {
+    fill: white;
+}
+
+.button__newClientContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 767px) {
+    .button__newClient {
+        position: fixed;
+    }
+
+
+}

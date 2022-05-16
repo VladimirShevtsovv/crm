@@ -1,0 +1,105 @@
+.confirmDelete__container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    padding: 25px 88px;
+    position: relative;
+    transform: translateY(-300px);
+    animation: showPopUp 1s forwards;
+}
+
+@keyframes showPopUp {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+}
+
+
+.confirmDelete__container h2 {
+    margin: 0;
+    margin-bottom: 11px;
+
+}
+
+.confirmDelete__containerButtonCancel {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+
+.confirmDelete__discription {
+    width: 70%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.spinner {
+    animation: rotate 2s linear infinite;
+    z-index: 15;
+    position: absolute;
+    top: calc(50% - 8px);
+    left: 10%;
+    width: 15px;
+    height: 15px;
+
+
+}
+
+.spinner .path {
+    stroke-linecap: round;
+    animation: dash 1.5s ease-in-out infinite;
+    stroke: #B0B0B0;
+}
+
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dasharray: 1, 150;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -35;
+    }
+    100% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -124;
+    }
+}
+
+.confirmDelete__errorMessange {
+    position: absolute;
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #F06A4D;
+    top: -20px;
+}
+
+
+
+@media (max-width: 520px) {
+    .confirmDelete__container{
+        padding: 25px 12px;
+    }
+    .confirmDelete__containerButtonCancel {
+        top: 15px;
+        right: 10px;
+    }
+}
+
+
+

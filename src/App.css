@@ -1,0 +1,19 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    margin: 0 auto;
+    height: 100vh;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .App {
+        overflow: scroll;
+    }
+
+}
+
+
+
+

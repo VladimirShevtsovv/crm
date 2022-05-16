@@ -1,0 +1,63 @@
+.buttonCahngeClient{
+    background: transparent;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    position: relative;
+    transition: 0.15s linear;
+    cursor: pointer;
+}
+
+.buttonCahngeClient:hover{
+    color: #9873FF;
+}
+
+.spinner {
+    animation: rotate 2s linear infinite;
+    z-index: 15;
+    position: relative;
+    top: calc(50% - 8px);
+    width: 16px;
+    height: 16px;
+}
+.spinner .path {
+    stroke-linecap: round;
+    animation: dash 1.5s ease-in-out infinite;
+    stroke: #B89EFF;
+}
+
+
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dasharray: 1, 150;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -35;
+    }
+    100% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -124;
+    }
+}
+
+.confirmDelete__errorMessange{
+    position: absolute;
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #F06A4D;
+    top: -15px;
+    left: -5px;
+    width: 100px;
+}

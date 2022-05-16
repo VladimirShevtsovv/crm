@@ -1,0 +1,90 @@
+.selectContacts__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    background: #F4F3F6;
+    border: 1px solid #C8C5D1;
+
+    border-top: none;
+    width: calc(100% - 1.5px);
+    padding:0;
+    transition: 0.2s linear;
+    transform: scaleY(1);
+    transform-origin: 50% 0% ;
+    position: absolute;
+    z-index: 10;
+}
+
+.selectContacts__listItem {
+    padding:10px 12px;
+    cursor: pointer;
+    transition: 0.15s linear;
+}
+
+.selectContacts__listItem:hover{
+    background: #E7E5EB;
+}
+
+
+.selectContacts__listHidden {
+    transform: scaleY(0);
+    transform-origin: 50% 0% ;
+    opacity: 0;
+    transition: 0.2s linear;
+    z-index: -100;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    background: #F4F3F6;
+    border: 1px solid #C8C5D1;
+    border-top: none;
+    width: 100%;
+    padding: 10px 0 0 0;
+    position: absolute;
+    z-index: 10;
+}
+
+.selectContacts__selectedItem {
+    border: 1px solid #C8C5D1;
+    background: #E7E5EB;
+    width: calc(100% - 24px);
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border-right: none;
+}
+
+.selectContacts__container {
+    width: 123px;
+    color: #333333;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    position: relative;
+}
+
+.selectContacts__dropDownArrowOpen {
+    transform: rotate(180deg);
+    transition: 0.2s linear;
+}
+
+.selectContacts__dropDownArrow {
+    transform: rotate(0deg);
+    transition: 0.2s linear;
+}
+
+@media (max-width: 520px) {
+    .selectContacts__container{
+        width: 110px !important;
+
+    }
+
+
+
+}
+
