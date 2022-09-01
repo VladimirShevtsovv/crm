@@ -1,4 +1,4 @@
-# CRM: управление данными клиентов 
+# CRM: customer data management
 
 Video of how it works: <a href='https://drive.google.com/file/d/17A9UfvRStQlGccezsrr5M_6H1ZuoVLWb/view?usp=sharing'>`https://drive.google.com/file/d/17A9UfvRStQlGccezsrr5M_6H1ZuoVLWb/view?usp=sharing`</a>
 
