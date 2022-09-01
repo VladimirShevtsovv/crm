@@ -1,12 +1,12 @@
 # CRM: управление данными клиентов 
 
-Видео работы приложения: <a href='https://drive.google.com/file/d/17A9UfvRStQlGccezsrr5M_6H1ZuoVLWb/view?usp=sharing'>`https://drive.google.com/file/d/17A9UfvRStQlGccezsrr5M_6H1ZuoVLWb/view?usp=sharing`</a>
+Video of how it works: <a href='https://drive.google.com/file/d/17A9UfvRStQlGccezsrr5M_6H1ZuoVLWb/view?usp=sharing'>`https://drive.google.com/file/d/17A9UfvRStQlGccezsrr5M_6H1ZuoVLWb/view?usp=sharing`</a>
 
-Для просмотра работы приложения на своем компьютере скачайте папку с сервером 
-(<a href='https://drive.google.com/drive/folders/11mEoEyU3rfhDPs9AsPtVnnNGkImr52R_?usp=sharing'>`https://drive.google.com/drive/folders/11mEoEyU3rfhDPs9AsPtVnnNGkImr52R_?usp=sharing`</a>) и выполните следующие инструкции: 
+Дo run the application on your computer download the folder with the server
+(<a href='https://drive.google.com/drive/folders/11mEoEyU3rfhDPs9AsPtVnnNGkImr52R_?usp=sharing'>`https://drive.google.com/drive/folders/11mEoEyU3rfhDPs9AsPtVnnNGkImr52R_?usp=sharing`</a>) and follow the instructions:
 
-1. Перед запуском убедитесь, что вы установили Node.js версии 12 или выше.
+1. Before running, make sure you have installed Node.js version 12 or higher.
 
-2. Для запуска сервера перейдите в скаченную папку с репозиторием и выполните команду `node index`. 
+2. To start the server, go to the downloaded folder with the repository and run the command `node index.js`. 
 
-3. После запуска сервера приложение будет доступно по ссылке <a href='https://vladimirshevtsovv.github.io/crm/'>`https://vladimirshevtsovv.github.io/crm/`</a>.
+3. After the server is launched, the application will be available via the link <a href='https://vladimirshevtsovv.github.io/crm/'>`https://vladimirshevtsovv.github.io/crm/`</a>.
